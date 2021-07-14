@@ -1,8 +1,14 @@
 /* --------------
-     poppins fonts 
+      fonts 
 --------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* --------------
+      fonts 
+--------------- */
 
+/*-------------------
+   common styles start
+-------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -10,9 +16,6 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-/*-------------------
-   common styles 
--------------------- */
 h1,h3{
 
     font-weight: 700;
@@ -21,6 +24,13 @@ h1,h3{
 p{
     font-weight: 400;
 }
+iframe{
+    border-radius: 20px;
+}
+/*-------------------
+   common styles end
+-------------------- */
+
 
 
 /*-----------------------
@@ -28,7 +38,6 @@ p{
 ----------------------- */
 header{
     background-color: #2D25A0;
-    /* padding: 100px 100px 140px; */
 }
 .top-banner{
     display: flex;
@@ -70,7 +79,7 @@ header{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    transform: scale(1.2) rotate(360deg);
+    transform: scale(1.2) rotate(-360deg);
     transition: transform 0.5s ease-in-out;
     margin:30px 100px 0px 35px;
 }
@@ -79,6 +88,10 @@ header{
     height: 438px;
     margin: 135px 140px 86px 102px;
 }
+/*-----------------------
+    top banner style end 
+----------------------- */
+
 
 /*-------------------
     blogs style start 
@@ -107,15 +120,139 @@ header{
     background-color: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
-/* .blog-info:hover{
-    box-shadow: 2px 0px 5px gray;
-} */
 .blog-info h3,p{
-    padding:0 15px;
+    padding:5px 15px;
 }
 .thumbnail img{
     width: 300px;
     height: 256px;
     margin-left: 15px;
 }
+/*-------------------
+    blogs style end 
+-------------------- */
 
+
+/* ----------------------
+    footer styles start
+--------------------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 63px;
+}
+.foot-main{
+    display: flex;
+    flex-direction: column;
+    width: 483.87px;
+    height: 213px;
+    justify-content: center;
+    align-items: center;
+}
+.foot-logo img{
+    width: 100%;
+}
+.foot-social{
+    width: 170px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.foot-social a{
+    text-decoration: none;
+}
+.foot-social i{
+    height: 32px;
+    width: 32px;
+    color: gray;
+    background-color: #8080804a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.copyright span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+
+
+/* ----------------------
+    footer styles end
+--------------------------*/
+
+
+/* bonus section styles */
+.bonus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bn-h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #10437a;
+    margin-bottom: 16px;
+}
+
+/* bonus section styles */
+
+
+/* for mobile devices */
+
+@media only screen and (max-width:688px){
+    
+    .top-banner{
+        flex-direction: column;
+       
+    }
+    .banner-name h1 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 55px;
+       
+    }
+    .banner-name {
+        width: 300px;
+        font-size: 14px;
+        margin:0px;
+        margin-bottom: 100px;
+    }
+    .watch-button{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .banner-image img{
+        width: 400px;
+        height:300px;
+        margin: 0px;
+        margin-top: auto;
+    }
+
+    .blogs{
+        display: flex;flex-direction: column;
+        left: 10px;
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
+    }
+
+     .footer-main{
+        padding-top: 20px;
+    }
+
+    .foot-logo img{
+        width: 300px;
+        height: 70px;
+    }
+    
+}
